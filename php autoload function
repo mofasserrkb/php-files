@@ -1,0 +1,6 @@
+<?php 
+function __autoload($className) {
+$cnArray=explode("\\",$className);
+$path="folderName/classFoldername/".$cnArray[1].".php";
+require_once ($path);
+}
